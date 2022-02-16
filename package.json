@@ -4,7 +4,11 @@
   "description": "Restaurant Webpage",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "server": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +21,10 @@
   },
   "homepage": "https://github.com/briar9070/restaurantPage#readme",
   "devDependencies": {
+    "express": "^4.17.2",
     "webpack": "^5.68.0",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-middleware": "^5.3.1",
+    "webpack-dev-server": "^4.7.4"
   }
 }
